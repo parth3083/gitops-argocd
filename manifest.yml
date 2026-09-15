@@ -1,0 +1,13 @@
+apiVersion: v1 # When was thePod introduced in Kubernetes? v1.0
+kind: Pod # Wat are we starting? A Pod
+metadata:
+  name: nginx # Name of the Pod
+  namespace: 100x-devs
+  labels:
+    app: nginx
+spec:
+  containers:
+    - name: nginx # First container to start inside the POD
+      image: nginx
+      ports:
+      - containerPort: 80  # Port on which Pod will listen for incoming requests

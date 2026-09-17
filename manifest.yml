@@ -8,6 +8,6 @@ metadata:
 spec:
   containers:
     - name: next # First container to start inside the POD
-      image: nginx
+      image: parth3083/gitops-practice:06416240efc937f1cb134b78b3362fb5dc2ee8ce
       ports:
       - containerPort: 80  # Port on which Pod will listen for incoming requests
